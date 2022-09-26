@@ -1,0 +1,4 @@
+// -- Percentual Totais sem filtros aplicados
+// https://www.youtube.com/watch?v=a5rRMD-2O-k&list=PLV-9aagMq_koV4BVilwsb99f8DwHdMLCM&index=22
+
+Percentual Individual Sobre o Total = DIVIDE([Total Vendas],[Somar Todas Vendas],BLANK())

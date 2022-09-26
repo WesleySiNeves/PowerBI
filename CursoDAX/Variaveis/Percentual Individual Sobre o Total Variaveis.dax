@@ -1,0 +1,4 @@
+% Total Selecionado = 
+
+VAR VendasSelecionadas = CALCULATE([Total de Vendas], ALLSELECTED(Produtos))
+Return  DIVIDE([Total de Vendas],VendasSelecionadas,BLANK())

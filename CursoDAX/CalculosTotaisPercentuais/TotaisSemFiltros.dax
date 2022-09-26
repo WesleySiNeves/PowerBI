@@ -1,0 +1,1 @@
+Somar Todas Vendas = CALCULATE([Total Vendas],ALL(Produtos))
