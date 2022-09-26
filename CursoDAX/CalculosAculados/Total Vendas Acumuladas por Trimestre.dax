@@ -1,0 +1,2 @@
+Total Vendas Acumuladas por Trimestre = CALCULATE(FactPedidos[TotalVendas],
+DATESQTD(dimCalendario[DataPedido].[Date]))

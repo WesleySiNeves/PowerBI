@@ -1,0 +1,11 @@
+CÓDIGO UTILIZADO NO VÍDEO
+
+**********************************************
+
+PRODUTOS
+= Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("i45WMjRQ0lEyMwCRzom5mcWpJYkKTkWJecmJQBFjSx1LpVidaCUjLKoCioAksiJjkLQ5qiLHqtIcIN/EVMcUrMYEJGuBpiY3sSg1B2SUCcwoUyzKwlKLUlKRFZmBpE0xFOWm5mQkIttpjsUw58y8KrAiA7ASCyxGBeUXg1SYmkKts8TivaD8ChQ1hgZYFPkkAsMzC6EuFgA=", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [#"ID Produto" = _t, #"ID Fornecedor" = _t, #"Nome do Produto" = _t, #"Valor de Venda" = _t])
+
+FORNECEDORES
+= Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("i45WMjUwUNJRcsxJTM9PLFZwzs9LS00+vPzw1tRioLChkY6pUqxOtJIZWFVQflFiZm6ignNibmZxakkiWImxjiVYiTlYSXBqUXpmQaqCa3FJYm5BYlFmIkiNIVSNBViNa3HB4bVFmSX5CsGJeUAS3VITpdhYAA==", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [#"ID Fornecedor" = _t, #"Nome do Fornecedor" = _t, #"Valor de Compra Negociado" = _t])
+
+**********************************************

@@ -1,0 +1,1 @@
+Total Entradas = CALCULATE(Sum(Dados[Movimentação]),FILTER(Dados,Dados[Tipo] ="Saída"))

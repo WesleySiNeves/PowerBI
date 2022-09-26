@@ -1,0 +1,7 @@
+Total Vendas Acumuladas Geral = if([TotalVendas] > 0 ,
+CALCULATE([TotalVendas],
+FILTER(ALL(dimCalendario[DataPedido].[Date]),
+dimCalendario[DataPedido].[Date] <= MAX(dimCalendario[DataPedido].[Date])
+)),
+BLANK()
+)

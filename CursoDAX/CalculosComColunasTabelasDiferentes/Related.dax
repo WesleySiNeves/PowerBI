@@ -1,0 +1,8 @@
+﻿
+// Tanto para utilizar as funcoes Related  ou RelatedTable
+// as Tabelas devem estar relacionadas
+
+// --https://www.youtube.com/watch?v=365Fyq5z5W8
+
+MLucroVenda = SUMX(Produtos,Produtos[Valor de Venda] - RELATED(Fornecedores[Valor de Compra Negociado])
+

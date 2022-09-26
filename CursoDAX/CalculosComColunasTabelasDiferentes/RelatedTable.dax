@@ -1,0 +1,1 @@
+MTotalVendido = SUMX(RelatedTable(Produtos),Produtos[Valor de Venda])

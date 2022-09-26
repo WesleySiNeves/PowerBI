@@ -1,0 +1,2 @@
+Total Vendas Acumuladas por Mes = CALCULATE(FactPedidos[TotalVendas],
+DATESMTD(dimCalendario[DataPedido].[Date]))

@@ -1,0 +1,8 @@
+Acumulado Por Modelo = 
+CALCULATE(
+	SUM('FatoVendas'[TotalVendaLiquida]),
+	FILTER(
+		ALLSELECTED('DimModelos'[Modelo]),
+		ISONORAFTER('DimModelos'[Modelo], MAX('DimModelos'[Modelo]), DESC)
+	)
+)
