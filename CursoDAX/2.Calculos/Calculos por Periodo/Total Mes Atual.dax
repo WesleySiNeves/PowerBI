@@ -1,0 +1,12 @@
+MediaUltimo3Meses = 
+var  numeroMeses  = 0
+var  maximaData = MAX(DimTempo[UsageDate])
+var periodo = DATESINPERIOD(DimTempo[UsageDate],maximaData,-numeroMeses,MONTH)
+var resultado  = CALCULATE(SUMX(VALUES(DimTempo[Ano Mes]),Cust),periodo)
+
+RETURN resultado
+
+
+
+
+Total Entradas = CALCULATE(Sum(Dados[Movimentação]),FILTER(Dados,Dados[Tipo] ="Entrada"))
