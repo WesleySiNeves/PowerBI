@@ -1,0 +1,12 @@
+Média de Close MoM% = 
+IF(
+	ISFILTERED('StockMarket'[Data]),
+	ERROR("Medidas rápidas de inteligência de tempo somente podem ser agrupadas ou filtradas pela hierarquia de data fornecida pelo Power BI ou pela coluna de data primária."),
+	VAR __PREV_MONTH =
+		CALCULATE(
+			AVERAGE('StockMarket'[Close]),
+			DATEADD('StockMarket'[Data].[Date], -1, MONTH)
+		)
+	RETURN
+		DIVIDE(AVERAGE('StockMarket'[Close]) - __PREV_MONTH, __PREV_MONTH)
+)

@@ -1,0 +1,1 @@
+chave_Api ="FAAUTBXFUPN1AYUR"

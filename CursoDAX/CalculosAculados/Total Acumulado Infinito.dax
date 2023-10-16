@@ -1,0 +1,14 @@
+Total Acumulado Infinito = 
+
+var data_Max=  MAX(DimTempo[UsageDate].[Date])
+
+var resultado  =
+CALCULATE(
+    [Custo Total],
+            FILTER(
+                ALL(DimTempo[UsageDate]),
+                DimTempo[UsageDate] <= data_Max
+            )
+)
+
+RETURN resultado

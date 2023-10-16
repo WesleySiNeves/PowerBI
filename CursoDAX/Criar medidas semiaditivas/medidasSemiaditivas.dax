@@ -1,0 +1,8 @@
+// Em situações em que você não quer o comportamento de avaliação padrão no Power BI, é possível usar as funções 
+// CALCULATE e/ou USERELATIONSHIP. No entanto, há mais circunstâncias em que não convém empregar o comportamento padrão.
+//  Uma dessas situações é quando há um problema semiaditivo a ser resolvido. As medidas padrão são conceitos simples, que podem usar as funções SUM, AVERAGE, MIN e MAX. Até o momento, SUM está sendo usado para a medida Total de Vendas.
+
+Last Inventory Count =
+CALCULATE (
+    SUM ( 'Warehouse'[Inventory Count] ),
+    LASTDATE ( 'Date'[Date] ))
